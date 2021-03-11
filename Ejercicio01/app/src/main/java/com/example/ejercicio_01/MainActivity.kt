@@ -30,16 +30,16 @@ class MainActivity : AppCompatActivity() {
         mainLayout = findViewById(R.id.mainLayout)
 
         loginBtn.setOnClickListener  {
-            if (userInput.text.toString().equals(this.user)) {
+            if (userInput.text.toString() == (this.user)) {
 
-                if (passInput.text.toString().equals(this.password)) {
+                if (passInput.text.toString() == (this.password)) {
                     Snackbar.make(mainLayout, "Todo ok", Snackbar.LENGTH_SHORT).show()
                 } else {
                     Snackbar.make(mainLayout, "Password Incorrecta", Snackbar.LENGTH_SHORT).show()
                 }
 
             } else {
-                Snackbar.make(mainLayout, this.user, Snackbar.LENGTH_SHORT).show()
+                Snackbar.make(mainLayout, "Usuario Incorrecto", Snackbar.LENGTH_SHORT).show()
             }
 
         }
