@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraph"
+    app:startDestination="@id/listaLibros">
+
+    <fragment
+        android:id="@+id/listaLibros"
+        android:name="com.example.ejercicio03.fragments.ListaLibros"
+        android:label="fragment_lista_libros"
+        tools:layout="@layout/fragment_lista_libros" />
+</navigation>
